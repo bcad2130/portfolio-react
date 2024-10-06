@@ -1,14 +1,14 @@
 // import logo from './logo.svg';
 import './App.css';
-import About from './components/about_me'
 import Navigation from './components/navigation'
-
+import About from './components/about_me'
+import Projects from './components/projects'
 
 function App() {
   return (
     <>
       <Navigation/>
-      <About/>
+      <Projects/>
     </>
   );
 }
