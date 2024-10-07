@@ -16,7 +16,7 @@ const Projects = () => (
       <Project>
         <a href="https://brett-moody-blues.netlify.app/">
           <ProjectFig>
-            <ProjectImg src="../../assets/moody.png" />
+            <ProjectImg src="../../../assets/moody.png" />
 
             <ProjectFigCaption>Moody Blues<br/>(Faux Sign Up Page)</ProjectFigCaption>
           </ProjectFig>
@@ -26,7 +26,7 @@ const Projects = () => (
       <Project>
         <a href="https://brett-photo-slideshow.netlify.app/">
           <ProjectFig>
-            <ProjectImg src="../../assets/slideshow.png" />
+            <ProjectImg src="../assets/slideshow.png" />
 
             <ProjectFigCaption>Slideshow</ProjectFigCaption>
           </ProjectFig>
