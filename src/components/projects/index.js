@@ -6,7 +6,7 @@ const Projects = () => (
       <Project>
         <a href="https://brett-book-club.netlify.app/">
           <ProjectFig>
-            <ProjectImg src="./photos/book-club.png" />
+            <ProjectImg src="../../assets/book-club.png" />
 
             <ProjectFigCaption>Book Club<br/>(API with Search)</ProjectFigCaption>
           </ProjectFig>
@@ -16,7 +16,7 @@ const Projects = () => (
       <Project>
         <a href="https://brett-moody-blues.netlify.app/">
           <ProjectFig>
-            <ProjectImg src="./photos/moody.png" />
+            <ProjectImg src="../../assets/moody.png" />
 
             <ProjectFigCaption>Moody Blues<br/>(Faux Sign Up Page)</ProjectFigCaption>
           </ProjectFig>
@@ -26,7 +26,7 @@ const Projects = () => (
       <Project>
         <a href="https://brett-photo-slideshow.netlify.app/">
           <ProjectFig>
-            <ProjectImg src="./photos/slideshow.png" />
+            <ProjectImg src="../../assets/slideshow.png" />
 
             <ProjectFigCaption>Slideshow</ProjectFigCaption>
           </ProjectFig>
@@ -36,7 +36,7 @@ const Projects = () => (
       <Project>
         <a href="https://brett-moody-blues-purchase-tix.netlify.app/">
           <ProjectFig>
-            <ProjectImg src="./photos/purchase-tix.png" />
+            <ProjectImg src="../../assets/purchase-tix.png" />
 
             <ProjectFigCaption>Moody Blues Variant<br/>(Faux Ticket Purchase)</ProjectFigCaption>
           </ProjectFig>
