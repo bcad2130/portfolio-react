@@ -1,12 +1,16 @@
 import React from 'react'
 import {ProjectsSection, Project, ProjectImg, ProjectFig, ProjectFigCaption} from './styles'
+import bookclub from "../../assets/book-club.png";
+import moody from "../../assets/moody.png";
+import slideshow from "../../assets/slideshow.png";
+import purchasetix from "../../assets/purchase-tix.png";
 
 const Projects = () => (
     <ProjectsSection>
       <Project>
         <a href="https://brett-book-club.netlify.app/">
           <ProjectFig>
-            <ProjectImg src="../../assets/book-club.png" />
+            <ProjectImg src={bookclub} />
 
             <ProjectFigCaption>Book Club<br/>(API with Search)</ProjectFigCaption>
           </ProjectFig>
@@ -16,7 +20,7 @@ const Projects = () => (
       <Project>
         <a href="https://brett-moody-blues.netlify.app/">
           <ProjectFig>
-            <ProjectImg src="../../../assets/moody.png" />
+            <ProjectImg src={moody} />
 
             <ProjectFigCaption>Moody Blues<br/>(Faux Sign Up Page)</ProjectFigCaption>
           </ProjectFig>
@@ -26,7 +30,7 @@ const Projects = () => (
       <Project>
         <a href="https://brett-photo-slideshow.netlify.app/">
           <ProjectFig>
-            <ProjectImg src="../assets/slideshow.png" />
+            <ProjectImg src={slideshow} />
 
             <ProjectFigCaption>Slideshow</ProjectFigCaption>
           </ProjectFig>
@@ -36,7 +40,7 @@ const Projects = () => (
       <Project>
         <a href="https://brett-moody-blues-purchase-tix.netlify.app/">
           <ProjectFig>
-            <ProjectImg src="../../assets/purchase-tix.png" />
+            <ProjectImg src={purchasetix} />
 
             <ProjectFigCaption>Moody Blues Variant<br/>(Faux Ticket Purchase)</ProjectFigCaption>
           </ProjectFig>
