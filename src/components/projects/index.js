@@ -1,47 +1,47 @@
 import React from 'react'
-import {ProjectsSection} from './styles'
+import {ProjectsSection, Project, ProjectImg, ProjectFig, ProjectFigCaption} from './styles'
 
 const Projects = () => (
     <ProjectsSection>
-      <div>
+      <Project>
         <a href="https://brett-book-club.netlify.app/">
-          <figure>
-            <img src="./photos/book-club.png" />
+          <ProjectFig>
+            <ProjectImg src="./photos/book-club.png" />
 
-            <figcaption>Book Club<br/>(API with Search)</figcaption>
-          </figure>
+            <ProjectFigCaption>Book Club<br/>(API with Search)</ProjectFigCaption>
+          </ProjectFig>
         </a>
-      </div>
+      </Project>
 
-      <div>
+      <Project>
         <a href="https://brett-moody-blues.netlify.app/">
-          <figure>
-            <img src="./photos/moody.png" />
+          <ProjectFig>
+            <ProjectImg src="./photos/moody.png" />
 
-            <figcaption>Moody Blues<br/>(Faux Sign Up Page)</figcaption>
-          </figure>
+            <ProjectFigCaption>Moody Blues<br/>(Faux Sign Up Page)</ProjectFigCaption>
+          </ProjectFig>
         </a>
-      </div>
+      </Project>
 
-      <div>
+      <Project>
         <a href="https://brett-photo-slideshow.netlify.app/">
-          <figure>
-            <img src="./photos/slideshow.png" />
+          <ProjectFig>
+            <ProjectImg src="./photos/slideshow.png" />
 
-            <figcaption>Slideshow</figcaption>
-          </figure>
+            <ProjectFigCaption>Slideshow</ProjectFigCaption>
+          </ProjectFig>
         </a>
-      </div>
+      </Project>
 
-      <div>
+      <Project>
         <a href="https://brett-moody-blues-purchase-tix.netlify.app/">
-          <figure>
-            <img src="./photos/purchase-tix.png" />
+          <ProjectFig>
+            <ProjectImg src="./photos/purchase-tix.png" />
 
-            <figcaption>Moody Blues Variant<br/>(Faux Ticket Purchase)</figcaption>
-          </figure>
+            <ProjectFigCaption>Moody Blues Variant<br/>(Faux Ticket Purchase)</ProjectFigCaption>
+          </ProjectFig>
         </a>
-      </div>
+      </Project>
     </ProjectsSection>
 )
 
