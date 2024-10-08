@@ -5,48 +5,45 @@ import moody from "../../assets/moody.png";
 import slideshow from "../../assets/slideshow.png";
 import purchasetix from "../../assets/purchase-tix.png";
 
-const Projects = () => (
+const Projects = ({pickProject}) => (
     <ProjectsSection>
-      <Project>
-        <a href="https://brett-book-club.netlify.app/">
+      <Project onClick={() => pickProject('bookclub')}>
           <ProjectFig>
             <ProjectImg src={bookclub} />
 
             <ProjectFigCaption>Book Club<br/>(API with Search)</ProjectFigCaption>
           </ProjectFig>
-        </a>
       </Project>
 
-      <Project>
-        <a href="https://brett-moody-blues.netlify.app/">
+      <Project onClick={() => pickProject('moody')}>
           <ProjectFig>
             <ProjectImg src={moody} />
 
             <ProjectFigCaption>Moody Blues<br/>(Faux Sign Up Page)</ProjectFigCaption>
           </ProjectFig>
-        </a>
       </Project>
 
-      <Project>
-        <a href="https://brett-photo-slideshow.netlify.app/">
+      <Project onClick={() => pickProject('slideshow')}>
           <ProjectFig>
             <ProjectImg src={slideshow} />
 
             <ProjectFigCaption>Slideshow</ProjectFigCaption>
           </ProjectFig>
-        </a>
       </Project>
 
-      <Project>
-        <a href="https://brett-moody-blues-purchase-tix.netlify.app/">
+      <Project onClick={() => pickProject('purchasetix')}>
           <ProjectFig>
             <ProjectImg src={purchasetix} />
 
             <ProjectFigCaption>Moody Blues Variant<br/>(Faux Ticket Purchase)</ProjectFigCaption>
           </ProjectFig>
-        </a>
       </Project>
     </ProjectsSection>
 )
 
 export default Projects
+
+        // <a href="https://brett-book-club.netlify.app/">
+        // <a href="https://brett-moody-blues.netlify.app/">
+        // <a href="https://brett-photo-slideshow.netlify.app/">
+        // <a href="https://brett-moody-blues-purchase-tix.netlify.app/">
