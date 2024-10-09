@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import './App.css';
 import React, {useState} from 'react'
 import Navigation from './components/navigation'
@@ -33,13 +32,5 @@ function App() {
     </>
   );
 }
-
-
-      // <Transition in={showPanel} timeout={300} >
-      //     {(state) => (
-      //       <DetailPanel book={selectedBook} closePanel={closePanel} state={state} toggleFave={toggleFave}/>
-      //     )}
-      // </Transition>
-
 
 export default App;

@@ -5,6 +5,8 @@ import {Panel, BG, P, Em} from './styles' //CloseWrapper,
 
 const DetailPanel = ({project, closePanel, state}) => {
 
+  if (!project) return (<></>)
+
   let detail = {}
 
   switch (project) {
@@ -12,23 +14,25 @@ const DetailPanel = ({project, closePanel, state}) => {
       detail.description = "Web App for a book directory database. Includes Search tool with character matching on title and author, Favorites with persistent browser storage, and responsive animated detail panel."
       detail.stack = "Javascript, React.js, Styled Components, React Transition Group"
       break;
+
     case 'moody':
       detail.description = "Web App for a social media brand page. Includes Sign Up pop-up with input validation, Custom Colors adjustable via user selection, and animated jigsaw puzzle background based on pointer position."
       detail.stack = "Javascript, React.js, Styled Components, Formik, Yup"
+      break;
+
     case 'slideshow':
       detail.description = "Web App for a photo slideshow. Includes navigation, slide counter, and responsive sizing for desktop and mobile."
       detail.stack = "Javascript, React.js"
+      break;
+
     case 'purchasetix':
       detail.description = "Web App for a social media brand page (Alternate Variant). Includes shopping order form with price calculation, Custom Colors adjustable via user selection, and animated jigsaw puzzle background based on pointer position."
       detail.stack = "Javascript, React.js, Styled Components, Formik, Yup"
       break;
+
     default:
       console.log("Error: [DetailPanel] Project is not set");
   }
-
-  // console.log('detail: ')
-  // console.log(detail)
-  // console.log(project)
 
   return (
     <>
@@ -45,8 +49,6 @@ const DetailPanel = ({project, closePanel, state}) => {
 }
 
 const BookClubDetail = ({detail}) => {
-
-  // console.log(detail)
 
   return (
     <>

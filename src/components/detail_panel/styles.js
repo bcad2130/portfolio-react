@@ -40,6 +40,19 @@ export const Em = styled.em`
   font-style: italic;
 `
 
+export const BG = styled.div`
+  background: rgba(0,0,0,0.5);
+  cursor: pointer;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  z-index: 1;
+  opacity: ${({$state}) => ($state === 'entering' || $state === 'entered' ? 1 : 0)};
+  pointer-events: ${({$state}) => ($state === 'exited' ? 'none' : 'auto')};
+  transition: 300ms;
+`
+
 // export const CloseWrapper = styled(Pill)`
 //   display: ${({$state}) => ($state === 'entered' ? 'flex' : 'none')};
 //   top: 120px;
@@ -53,16 +66,3 @@ export const Em = styled.em`
 //     right: 20px;
 //   }
 // `
-
-export const BG = styled.div`
-  background: rgba(0,0,0,0.5);
-  cursor: pointer;
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  z-index: 1;
-  opacity: ${({$state}) => ($state === 'entering' || $state === 'entered' ? 1 : 0)};
-  pointer-events: ${({$state}) => ($state === 'exited' ? 'none' : 'auto')};
-  transition: 300ms;
-`
