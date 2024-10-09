@@ -1,32 +1,33 @@
 import styled from 'styled-components'
 
 export const Panel = styled.article`
-  background-color: #ffe581;
-  border-left: 2px solid #000;
+  background-color: #81dfff;
+  border-top: 2px solid #000;
 
-  height: calc(100vh - 82px);
-  width: 660px;
+  // height: calc(100vh - 82px);
+  // width: 660px;
+  width: 100vw;
+  height: 300px;
 
   position: fixed;
   z-index: 2;
-  right: ${({$state}) => ($state === 'entering' || $state === 'entered' ? 0 : '-660px')};
-  bottom: 0;
+  bottom: ${({$state}) => ($state === 'entering' || $state === 'entered' ? 0 : '-500px')};
 
   box-sizing: border-box;
-  padding: 40px 120px 60px 40px;
+  padding: 40px;
 
   overflow: scroll;
   transition: 300ms;
 
-  @media (max-width: 1000px) {
-    border-left: none;
-    padding: 40px 86px 20px 20px;
-    width: 100vw;
-    height: calc(100vh - 75px);
-    bottom: ${({$state}) => ($state === 'entering' || $state === 'entered' ? 0 : '-100vh')};
-    right: unset;
-    z-index: 3;
-  }
+  // @media (max-width: 1000px) {
+  //   border-left: none;
+  //   padding: 40px 86px 20px 20px;
+  //   width: 100vw;
+  //   height: calc(100vh - 75px);
+  //   bottom: ${({$state}) => ($state === 'entering' || $state === 'entered' ? 0 : '-100vh')};
+  //   right: unset;
+  //   z-index: 3;
+  // }
 `
 
 export const P = styled.p`

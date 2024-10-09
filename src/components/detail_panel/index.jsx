@@ -5,7 +5,7 @@ import {Panel, BG, P, Em} from './styles' //CloseWrapper,
 
 const DetailPanel = ({project, closePanel, state}) => {
 
-  if (!project) return (<></>)
+  // if (!project) return (<></>)
 
   let detail = {}
 
@@ -31,7 +31,9 @@ const DetailPanel = ({project, closePanel, state}) => {
       break;
 
     default:
-      console.log("Error: [DetailPanel] Project is not set");
+      detail.description = ""
+      detail.stack = ""
+      // console.log("Error: [DetailPanel] Project is not set");
   }
 
   return (
