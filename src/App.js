@@ -12,12 +12,8 @@ function App() {
   const [selectedProject, setSelectedProject] = useState(null)
 
   const pickProject = (projectId) => {
-    // console.log(projectId)
     setSelectedProject(projectId)
-    console.log(selectedProject)
-
     setShowPanel(true)
-    console.log(showPanel)
   }
 
   const closePanel = () => {
