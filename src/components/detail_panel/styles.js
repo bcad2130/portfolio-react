@@ -7,7 +7,7 @@ export const Panel = styled.article`
   // height: calc(100vh - 82px);
   // width: 660px;
   width: 100vw;
-  height: 300px;
+  height: 400px;
 
   position: fixed;
   z-index: 2;

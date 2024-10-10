@@ -42,8 +42,3 @@ const Projects = ({pickProject}) => (
 )
 
 export default Projects
-
-        // <a href="https://brett-book-club.netlify.app/">
-        // <a href="https://brett-moody-blues.netlify.app/">
-        // <a href="https://brett-photo-slideshow.netlify.app/">
-        // <a href="https://brett-moody-blues-purchase-tix.netlify.app/">
