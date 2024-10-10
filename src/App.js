@@ -7,6 +7,7 @@ import DetailPanel from './components/detail_panel'
 import {Transition} from 'react-transition-group'
 
 function App() {
+  const [content, setContent] = useState('about')
   const [showPanel, setShowPanel] = useState(false)
   const [selectedProject, setSelectedProject] = useState(null)
 
@@ -20,15 +21,29 @@ function App() {
     setShowPanel(false)
   }
 
+  const setPageContent = (pageContent) => {
+    console.log(pageContent)
+    setContent(pageContent)
+  }
+
   return (
     <>
-      <Navigation/>
-      <Projects pickProject={pickProject} />
-      <Transition in={showPanel} timeout={300} >
-          {(state) => (
-            <DetailPanel project={selectedProject} closePanel={closePanel} state={state} />
-          )}
-      </Transition>
+      <Navigation setPageContent={setPageContent} />
+      {content == 'about' && <About/>}
+
+      {content == 'projects' &&
+        <>
+          <Projects pickProject={pickProject} />
+          <Transition in={showPanel} timeout={300} >
+              {(state) => (
+                <DetailPanel project={selectedProject} closePanel={closePanel} state={state} />
+              )}
+          </Transition>
+        </>
+      }
+
+
+      {content == 'resume' && <p>RESUME PLACEHOLDER</p>}
     </>
   );
 }
