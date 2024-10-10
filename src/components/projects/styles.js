@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const ProjectsSection = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  // width: 100%;
+
 
   /*cursor: e-resize;*/
   // padding: 1rem 0.5rem;
@@ -12,18 +12,25 @@ export const ProjectsSection = styled.section`
 `
 
 export const Project = styled.div`
+  cursor: pointer;
+  // width: 20%;
+
   // overflow: hidden;
   // opacity: 1;
   // transition: opacity 0.4s;
 `
 
 export const ProjectImg = styled.img`
+  width: 250px;
+  height: 250px;
   max-width: 100%;
+  min-width: 250px;
   // aspect-ratio: 4 / 5;
   // object-fit: cover;
 `
 
 export const ProjectFig = styled.figure`
+  margin: 1rem;
   // width: 100%;
   // padding: 0 0.5rem;
 `
