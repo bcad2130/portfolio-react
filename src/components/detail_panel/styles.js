@@ -4,10 +4,8 @@ export const Panel = styled.article`
   background-color: #81dfff;
   border-top: 2px solid #000;
 
-  // height: calc(100vh - 82px);
-  // width: 660px;
   width: 100vw;
-  height: 400px;
+  height: 500px;
 
   position: fixed;
   z-index: 2;
@@ -18,20 +16,9 @@ export const Panel = styled.article`
 
   overflow: scroll;
   transition: 300ms;
-
-  // @media (max-width: 1000px) {
-  //   border-left: none;
-  //   padding: 40px 86px 20px 20px;
-  //   width: 100vw;
-  //   height: calc(100vh - 75px);
-  //   bottom: ${({$state}) => ($state === 'entering' || $state === 'entered' ? 0 : '-100vh')};
-  //   right: unset;
-  //   z-index: 3;
-  // }
 `
 
 export const P = styled.p`
-  // font-family: 'Libre Baskerville', serif;
   font-size: 16px;
   line-height: 1.6;
   margin: 30px 0 0;
@@ -52,6 +39,19 @@ export const BG = styled.div`
   opacity: ${({$state}) => ($state === 'entering' || $state === 'entered' ? 1 : 0)};
   pointer-events: ${({$state}) => ($state === 'exited' ? 'none' : 'auto')};
   transition: 300ms;
+`
+
+export const PanelImage = styled.img`
+  width: 350px;
+  height: 350px;
+  max-width: 100%;
+  min-width: 250px;
+  float: left;
+  margin: 0 20px;
+`
+
+export const PanelTitle = styled.h1`
+  text-align: center;
 `
 
 // export const CloseWrapper = styled(Pill)`
