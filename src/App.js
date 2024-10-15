@@ -4,6 +4,7 @@ import Navigation from './components/navigation'
 import About from './components/about_me'
 import Projects from './components/projects'
 import DetailPanel from './components/detail_panel'
+import Resume from './components/resume'
 import {Transition} from 'react-transition-group'
 
 function App() {
@@ -24,11 +25,12 @@ function App() {
   const setPageContent = (pageContent) => {
     console.log(pageContent)
     setContent(pageContent)
+
   }
 
   return (
     <>
-      <Navigation setPageContent={setPageContent} />
+      <Navigation pageContent={content} setPageContent={setPageContent} />
       {content == 'about' && <About/>}
 
       {content == 'projects' &&
@@ -43,7 +45,7 @@ function App() {
       }
 
 
-      {content == 'resume' && <p>RESUME PLACEHOLDER</p>}
+      {content == 'resume' && <Resume/>}
     </>
   );
 }
