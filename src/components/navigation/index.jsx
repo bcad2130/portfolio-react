@@ -1,15 +1,18 @@
 import React from 'react'
-import {NavHeader, PageTitle, NavBar, NavLink} from './styles'
+import {NavHeader, PageTitle, NavBar, NavLink, Pill} from './styles'
 
-const Navigation = ({setPageContent}) => (
+const Navigation = ({pageContent, setPageContent}) => (
   <NavHeader>
     <PageTitle>Coding Projects</PageTitle>
     <NavBar>
-      <NavLink onClick={() => setPageContent('projects')} $isActive={true}>Projects</NavLink>
-      <NavLink href="https://docs.google.com/document/d/1kR4dyKhPd3i3F8GFFOWf9n7niDfeiWw1EybwNuGNwJo/export?format=pdf">Resume</NavLink>
-      <NavLink onClick={() => setPageContent('about')}>About Me</NavLink>
+      <NavLink $pageContent={pageContent} $pageName="projects" onClick={() => setPageContent('projects')} >Projects</NavLink>
+      <NavLink $pageContent={pageContent} $pageName="resume" onClick={() => setPageContent('resume')} >Resume</NavLink>
+      <NavLink $pageContent={pageContent} $pageName="about" onClick={() => setPageContent('about')} >About Me</NavLink>
     </NavBar>
   </NavHeader>
 )
 
 export default Navigation
+
+
+// https://docs.google.com/document/d/1kR4dyKhPd3i3F8GFFOWf9n7niDfeiWw1EybwNuGNwJo/export?format=pdf
